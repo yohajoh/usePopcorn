@@ -1,4 +1,9 @@
-export function WatchedMovie({ watchedMovie }) {
+export function WatchedMovie({
+  watchedMovie,
+  onCloseMovie,
+  setActive,
+  isMobile,
+}) {
   const len = watchedMovie.length;
 
   const avRuntime = (
@@ -13,9 +18,19 @@ export function WatchedMovie({ watchedMovie }) {
     watchedMovie.reduce((acc, watched) => acc + watched.userRating, 0) / len
   ).toFixed(1);
 
+  function handleActive() {
+    onCloseMovie();
+    setActive("comp1");
+  }
+
   return (
     <>
       <div className="y-watched-movie">
+        {isMobile && (
+          <button className="btn-back" onClick={handleActive}>
+            &larr;
+          </button>
+        )}
         <h3 className="heading-3">Movies you watched</h3>
         <div className="y-w-m-info">
           <p>
