@@ -110,7 +110,6 @@ h4,
 }
 .search {
   display: block;
-  width: 20rem;
   height: 1rem;
   color: rgb(255, 255, 255);
   padding: 0.5rem 1rem;
@@ -215,6 +214,6 @@ h4,
   .content,
   .movie-detail-box {
     padding-top: 5rem;
-    height: 85vh;
+    height: 88vh;
   }
 }
