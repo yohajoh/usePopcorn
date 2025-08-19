@@ -8,7 +8,6 @@ export function MovieDetailsBox({
   watchedMovie,
   isWatched,
   setActive,
-  isMobile,
 }) {
   return (
     <div className="movie-detail-box">
@@ -25,7 +24,6 @@ export function MovieDetailsBox({
           watchedMovie={watchedMovie}
           onCloseMovie={onCloseMovie}
           setActive={setActive}
-          isMobile={isMobile}
         />
       )}
     </div>

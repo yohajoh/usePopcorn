@@ -109,7 +109,6 @@ export default function App() {
               watchedMovie={watchedMovie}
               isWatched={isWatched}
               setActive={setActive}
-              isMobile={isMobile}
             />
           </>
         )}

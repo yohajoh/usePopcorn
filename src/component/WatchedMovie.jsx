@@ -1,9 +1,4 @@
-export function WatchedMovie({
-  watchedMovie,
-  onCloseMovie,
-  setActive,
-  isMobile,
-}) {
+export function WatchedMovie({ watchedMovie, onCloseMovie, setActive }) {
   const len = watchedMovie.length;
 
   const avRuntime = (
@@ -26,11 +21,9 @@ export function WatchedMovie({
   return (
     <>
       <div className="y-watched-movie">
-        {isMobile && (
-          <button className="btn-back" onClick={handleActive}>
-            &larr;
-          </button>
-        )}
+        <button className="btn-back" onClick={handleActive}>
+          &larr;
+        </button>
         <h3 className="heading-3">Movies you watched</h3>
         <div className="y-w-m-info">
           <p>
